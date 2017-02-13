@@ -1,0 +1,13 @@
+1.
+a)
+Confidentiality: prevent unauthorized reading of information
+Integrity: detect unauthorized writing of information
+Availability: data is available in a timely manner when needed
+
+b) when confidentiality is more important than integrity: encrypted messages during wars is often one-time one-way communication that is valid in a short period of time. Their confidentiality is obviously essential whereas their short duration allows little time for interference or the trade of between time and effort to crack is unbalanced that the enemy rather knows the content and reacts than maliciously rewrites it. Moreover, to change the content without being revealed needs re-encryption, but encryption also can be a completely different process than decryption. 
+
+c) when integrity is more important than confidentiality: Bank account. Contrary to war communication, bank account stays for a long period of time and holds data that is representative of real-life currency. Confidentiality is still important but in online banking there can be multiple security gateways each of which has its own mechanism. For example, an user's account can be compromised so that the hacker can aquire read-only information. However to actually change the amount of money, he/she must gain access to the bank database itself, which has its own security.
+
+d) when availability is overriding concerns: computer's user account (e.g Windows xp). User account in Windows is known to be crackable using simple software available over the internet. The developers can increase account security in place of simple username-password method, but a more secure mechanism means more complicated implementation and user-unfriendly procedure, all go against the purpose of products that target home users or computer amateurs.
+
+9.

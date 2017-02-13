@@ -1,0 +1,56 @@
+3. 
+a. A register steps when its bit equals the majority over 3 bits. There are 8 possible permutations of 3 bits. The permutations where the first bit is the majority are: 101, 110, 010, 001, 111, 000 => 6 permutations => 6/8 = 3/4
+b. x and y are interchangeable => 3/4
+c. 3/4
+d. possible permutations: 111, 000 => 2/8 = 1/4
+e. w.l.o.g suppose exactly x and y step. Possible permutations: 110, 001 => 1/4
+f. 0 because the majority function dictates at least 2 always step
+g. 0 (same as f)
+
+7. code in a seperated file
+
+9. 
+a. Feistel cipher: a general cipher design principle.
+Encryption:
+the plaintext is split into left and right halves:
+P = (L0, R0)
+for i from 1 to n, the halves are updated:
+Li = Ri-1
+Ri = Li-1 ^ F(Ri-1, Ki)
+where Ki is the subkey for round i, and F is the round function. The ciphertext is (Ln, Rn)
+Decryption:
+Ri-1 = Li
+Li-1 = Ri ^ F(Ri-1, Ki)
+
+b. DES is a Feistel cipher
+c. AES is not a Feistel cipher because its operations have to be invertible
+d. TEA is not a Feistel cipher because again its operation have to be invertible but it does that by using bt shift, addition and subtraction, which simplicity is as close as of XOR
+
+11. 
+b. Diffusion: In a block, the new left half is the old right half, and the new right half is the old left half xor a round function 
+a. Confusion: The S-boxes expand and squeeze the bits in a half before feeding in a round function, effectively altering it.
+
+12.
+a. 64 bits in a plaintext block
+b. 64 bits in a ciphertext block
+c. key is 56 bits
+d. subkey is 48 bits
+e. 16 round
+f. 8 S-boxes
+g. S-box requires 48 bits of input
+h. S-box generates 32 bits of input
+
+20.
+a. C0 ^ IV = E(P0, K)
+Thus decryption rule is:
+P0 = D(C0 ^ IV, K)
+P1 = D(C1 ^ C0, K)
+P2 = D(C2 ^ C1, K) ...
+b. Decryption of 
+
+21. 
+Since calculation of Pi requires Ci and Ci-1 we need random access to both Ci and Ci-1, or in the case of P0, C0 and VI are needed.
+
+ 
+
+

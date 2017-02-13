@@ -1,0 +1,58 @@
+1.
+a)
+Confidentiality: prevent unauthorized reading of information
+Integrity: detect unauthorized writing of information
+Availability: data is available in a timely manner when needed
+[2]
+
+b) when confidentiality is more important than integrity: encrypted messages during wars is often one-time one-way communication that is valid in a short period of time. Their confidentiality is obviously essential whereas their short duration allows little time for interference or the trade of between time and effort to crack is unbalanced that the enemy rather knows the content and reacts than maliciously rewrites it. Moreover, to change the content without being revealed needs re-encryption, but encryption also can be a completely different process than decryption. 
+
+c) when integrity is more important than confidentiality: Bank account. Contrary to war communication, bank account stays for a long period of time and holds data that is representative of real-life currency. Confidentiality is still important but in online banking there can be multiple security gateways each of which has its own mechanism. For example, an user's account can be compromised so that the hacker can aquire read-only information. However to actually change the amount of money, he/she must gain access to the bank database itself, which has its own security.
+
+d) when availability is overriding concerns: computer's user account (e.g Windows xp). User account in Windows is known to be crackable using simple software available over the internet. The developers can increase account security in place of simple username-password method, but a more secure mechanism means more complicated implementation and user-unfriendly procedure, all go against the purpose of products that target home users or computer amateurs.
+
+9. 
+a. in the separated file jpeg
+b. In March 1941, Bletchley's reading of the Italian navy's Enigma material helped Admiral Cunningham's Mediterranean fleet defeat the Italians at the Battle of Matapan
+As British ships of the Mediterranean Fleet covered troop movements to Greece, Mavis Batey, a cryptographer at Bletchley Park, made a breakthrough, reading the Italian naval Enigma for the first time. The first message, the cryptic "Today’s the day minus three," was followed three days later by a second message reporting the sailing of an Italian battle fleet comprising one battleship, six heavy and two light cruisers, plus destroyers to attack the merchant convoys supplying British forces. As always with Enigma, the intelligence breakthrough was concealed from the Italians by ensuring there was a plausible reason for the Allies to have detected and intercepted their fleet. In this case, it was a carefully directed reconnaissance plane.
+As a further deception, Admiral Cunningham made a surreptitious exit after dark from a golf club in Alexandria to avoid being seen going on board his flagship, the battleship HMS Warspite. He had made a point of arriving at the club the same afternoon, with his suitcase prominently paraded as if for an overnight stay and spent time on the golf course within sight of the Japanese consul.An evening party on his flagship was advertised for that night but was never meant to take place [1].
+
+11.
+Examples of biometric authentication: fingerprint, palm veins, face recognition, DNA, palm print, hand geometry, iris recognition, retina [3].
+Examples of something you have: digital card, mechanical key, digital key
+Example where 2-factor authentication is used: When entering airport security gate, passenger has to give their passport (something you jave) and show their face and fingerprint (something you are)
+
+13. 
+a. This solution is too naive and impractical because as the transaction finishes, the imposters are rid of security procedure and only have to worry about real-life interference. For example 2 bank robbers can easily compromise a bank, withraw the money without worry about resistance and escape in a short amount of time before the police is alerted and reaches the destination.
+b. Impractical for the above case. We dont want the ill-intended to bypass our security. However in situation where protocol is put up to protect user such as in web protocols, this can allow the user to bypass security in case they know the destination is not harm
+c. A good security should have the process terminated when some information is missing. To alert user of termination and its reason is more user-friendly. However, user has no way to bypass in situation as of b
+d. Basically c without explanation. This approach is not user-friendly. However security is garanteed and add another layer of protection to the mechanism: the intruder will not know what information is missing thus have a harder time figuring out what to crack
+
+15. 
+a. Buggy software can be a security issue for honest users because they may unknowingly compromise the security by themselves, or be told by intruder to.
+b. Intruders love buggy software because of above reasons and inaddition they can hack with ease. They more bugs a sftware has the more windows it can be exploited in various way and more chance to be hacked
+c. Bugs can be exploited to compromise the software's integrity. The intruder can learn from the information revealed from bugs, uses bugs to bypass security
+
+17. 
+a. salami attack: In 2008 a hacker used a loophole taking advantage of online service which sends a tiny amount of money to user's bank account to verify its validity to amass $50000, by writing a script to create 58000 such accounts [4].
+b. It fails because the developer has placed the decimal in the wrong position leading to the code stealing $300000 in a few days. This amount of money in a short period of time is too conpicuous [5]. 
+
+Keystroke Sniffer:
+A USB-like device that can log the keystrokes of Microsoft keyboard by decrypting the RF signals used in the keyboard's wireless protocol. Make: Arduino hooked up to an NRF24L01+ 2.4GHz RF chip that does the sniffing, Lithium battery for charging, an SPI Serial Flash Chip or GSM module to retrieve the data. This proves that Microsoft keyboard's cecuriy is crackable [6]
+
+Ebay's cyber attack
+Ebay asked its users to change passwords in fear of that their accounts credentials were compromised as hackers obtained login credentials of some of its employees to gain access to corporate network. This potentially affects other sites as well because people tend to use same passwords for multiple sites. The company used sophisticated cybersecurity technology such as propriety hashing and salting technology to protect the passwords. There is not yet evidence of damage done, Cyber securiy is affecting a lot of companies lately [7].
+
+Regin malware
+Regin is a sophisticated malware with capabilities and level of resources that resemble espionage operation of a nation state. Its mission is not intellectual property but information of the target's travel and location and telecomunication. The malware conceals itself and has several levels of protection. It uses multiple types of encryption and can communicate with the deployer. It also uses modular structure that conceals deeper layers of the malware and make it difficult to ascertain what it's doing [8].
+
+
+Cite:
+[1] https://en.wikipedia.org/wiki/Battle_of_Cape_Matapan
+[2] http://www.cs.sjsu.edu/~stamp/infosec/powerpoint/
+[3] https://en.wikipedia.org/wiki/Biometrics
+[4] http://www.alphr.com/news/internet/201252/hacker-takes-50-000-a-few-cents-at-a-time
+[5] https://en.wikipedia.org/wiki/Office_Space
+[6] http://hackaday.com/2015/01/14/keystroke-sniffer-hides-as-a-wall-wart-is-scary/
+[7] http://www.reuters.com/article/us-ebay-password-idUSBREA4K0B420140521
+[8] http://money.cnn.com/2014/11/23/technology/security/regin-malware-symantec/index.html
