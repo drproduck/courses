@@ -4,19 +4,21 @@
 object MatrixCalculator {
 
   // converts matrix to a string
-  def toString(matrix: Array[Array[Int]]) = {
+  def toString(matrix: Array[Array[Int]]) : String = {
     var a = 0;
     var b = 0;
+    var s = new StringBuilder();
     for (a <- 0 until matrix.length) {
       for (b <- 0 until matrix(a).length) {
-        print(matrix(a)(b))
+        s.append(matrix(a)(b))
         if (b!=matrix(a).length-1){
-          print(" ")
+          s.append(" ")
         }
       }
       if (a!=matrix.length-1)
-      print("\n")
+      s.append("\n")
     }
+    return s.toString()
   }
 
   // returns the sum of the diagonal entries of a matrix

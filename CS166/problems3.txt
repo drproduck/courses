@@ -46,11 +46,30 @@ Thus decryption rule is:
 P0 = D(C0 ^ IV, K)
 P1 = D(C1 ^ C0, K)
 P2 = D(C2 ^ C1, K) ...
-b. Decryption of 
+b. Weakness of this encryption: Because Cn-1Cn = E(Pn, K), which is a straight mapping from the plaintext, the same plaintext will give the same xor of 2 consecutive ciphertexts. More specfically, given ciphertext C1C2...Cn, tranform it to (VI^C1)(C1^C2)...(Cn-1^Cn) (everything is known up to VI), and a pair of new ciphertext blocks are the same if and only if the pair of plaintexts at those location are the same. This weakness can give rise to similar attack against ECB mode e.g new cipher-text only attack 
+2nd possible disadvantage compared to CBC is this cipher is useless for MAC. The plaintext only depends on ciphertext and key ( = D(Cn^Cn-1,K)) so that there is no chaining of plaintext that will propagate error to the final MAC block. 
 
 21. 
 Since calculation of Pi requires Ci and Ci-1 we need random access to both Ci and Ci-1, or in the case of P0, C0 and VI are needed.
-
+The disadvantage comes from having to use 2 ciphertexts in a random access environment. If we lose track of ciphertext e.g 2 consecutive ciphertexts were not written sequentially on a disk then their is no way to get the correct pair of ciphertexts for decryption
  
+24. 
 
+25.
+a. If they keep using the same IV then the start of a message can be determined. Also P0^IV = D(C0, K) and thus the same C0's will give the same P0's if this IV is repeated multiple times.
+b. Because the only agen of confusion isCBC is more dangerous because you can attack the repetition in 
 
+29. P1 = D(C1, K)^C0
+=>  D(C1, K) = P1^C0 is known
+    Suppose we want to find C (unknown) such that the resulting decryption will return plaintext X (known). Then:
+    D(C1, K)^C = X
+=>  P1^C0^C    = X
+=>  P1^C0^X    = C, and the left hand side is known
+
+30
+As Bob decrypts using C0, X, C2, C3: P0 = D(C0, K2)^IV, !P1 = D(X, K2)^C0, !P2 = D(C2, K2)^X, P3 = D(C3, K2)^C2
+Bob checks MAC (The Ci here are not ciphertexts but immediate texts computed leading to MAC, meaning Bob doesnt know them except for the last Cn-1 i.e MAC): 
+C0 = E(P0^IV, K1), !C1 = E(!P1^C0, K1), !C2 = E(!P2^!C1, K1), !C3 = E(P3^!C2, K1) != MAC 
+What could go wrong here is !P2^!C1 = P2^C1
+21, 24, 25, 29, 30. 
+    
