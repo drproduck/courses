@@ -7,13 +7,15 @@ object Calculator {
 
   // = 1 * 2 * 3 * ... * n
   def fact(n: Int) : Int = {
+    if (n<0)
+      throw new Exception("integer must be at least 0")
     var prod : Int = 1;
     var nn : Int = n;
     while (nn>0) {
       prod *= nn;
       nn-=1;
     }
-    return prod
+    prod
   }
 
   // = 1 + 2 + 3 + ... + n

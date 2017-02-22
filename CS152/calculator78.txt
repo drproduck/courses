@@ -1,0 +1,21 @@
+problem 7
+1. AnyVal = ()
+2. AnyVal = () 
+3. error
+4. Int = 1
+5. Boolean = false
+6. error
+7. 100
+
+8. Boolean = true
+9. Boolean = false
+
+problem 8
+1. Int = 9
+2. Int = 6
+3. Int = 26
+4. error
+5. Int = 41
+6. 
+7. Int = 13
+8. Int = 15
