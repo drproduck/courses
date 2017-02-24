@@ -1,0 +1,135 @@
+3. 
+a. A register steps when its bit equals the majority over 3 bits. There are 8 possible permutations of 3 bits. The permutations where the first bit is the majority are: 101, 110, 010, 001, 111, 000 => 6 permutations => 6/8 = 3/4
+b. x and y are interchangeable => 3/4
+c. 3/4
+d. possible permutations: 111, 000 => 2/8 = 1/4
+e. w.l.o.g suppose exactly x and y step. Possible permutations: 110, 001 => 1/4
+f. 0 because the majority function dictates at least 2 always step
+g. 0 (same as f)
+
+7. code in a seperated file
+result:
+After initialization: 
+permutation S: 
+4c 46 51 e 36 aa 27 24 14 0 70 80 42 7f a7 a9 8e
+94 c 7d 7b 37 78 be af 9 c0 9b e2 d 3c 6c 4
+ed 1f b8 a2 68 db 3f d6 76 ba bc c2 d5 3b ff 39
+2e 4e bd fa 18 b2 b1 86 6b fc 1e 73 5b 75 35 1a
+13 d7 ad 74 66 f7 b3 ac fb 7 ab e3 41 77 57 53
+84 98 e8 dd 31 11 a1 d2 16 82 72 f9 6a 40 33 8c
+c4 99 2 cf 81 dc 5e 9c 5a b4 22 c1 5f cc b 56
+30 c7 7c 7a 9a 10 cd 4d 83 65 7e ee ce 71 34 c8
+62 fd 49 f4 9f bf 2a 8f 6d 1c a c9 ef e4 b9 6
+d8 3d 3a bb a8 b5 a4 c3 43 52 4b a0 5 a5 93 90
+ae 48 d4 a6 2d 6f a3 63 e1 8a 8d b0 5d b6 23 ea
+60 44 69 92 17 2f f 50 2b f5 f6 32 b7 29 1 45
+12 59 26 d3 c6 87 d9 e5 de 47 5c 6e cb 1d 58 8
+4f eb da 55 89 85 f0 e6 e7 f1 c5 3 f8 d0 38 d1
+fe e0 67 88 9d 25 ca ec 8b 19 21 15 28 f3 97 79
+20 df 91 61 4a 54 1b e9 9e 3e f2 64 2c 96 95 
+i = 0, j = 0
+
+After 100 rounds: 
+permutation S: 
+4c f7 51 e 36 aa 27 24 14 0 70 80 42 7f a7 a9 8e
+94 c 7d 7b 37 78 be af 9 c0 9b e2 d 3c 6c 4
+ed 1f b8 a2 68 db 3f d6 76 ba bc c2 d5 3b ff 39
+2e 4e bd fa 18 b2 b1 86 6b fc 1e 73 5b 75 35 1a
+13 d7 ad 74 66 46 b3 ac fb 7 ab e3 41 77 57 53
+84 98 e8 dd 31 11 a1 d2 16 82 72 f9 6a 40 33 8c
+c4 99 2 cf 81 dc 5e 9c 5a b4 22 c1 5f cc b 56
+30 c7 7c 7a 9a 10 cd 4d 83 65 7e ee ce 71 34 c8
+62 fd 49 f4 9f bf 2a 8f 6d 1c a c9 ef e4 b9 6
+d8 3d 3a bb a8 b5 a4 c3 43 52 4b a0 5 a5 93 90
+ae 48 d4 a6 2d 6f a3 63 e1 8a 8d b0 5d b6 23 ea
+60 44 69 92 17 2f f 50 2b f5 f6 32 b7 29 1 45
+12 59 26 d3 c6 87 d9 e5 de 47 5c 6e cb 1d 58 8
+4f eb da 55 89 85 f0 e6 e7 f1 c5 3 f8 d0 38 d1
+fe e0 67 88 9d 25 ca ec 8b 19 21 15 28 f3 97 79
+20 df 91 61 4a 54 1b e9 9e 3e f2 64 2c 96 95 
+i = 1, j = 70
+
+After 1000 rounds: 
+permutation S: 
+4c f7 a4 e 36 aa 27 24 14 0 70 80 42 7f a7 a9 8e
+94 c 7d 7b 37 78 be af 9 c0 9b e2 d 3c 6c 4
+ed 1f b8 a2 68 db 3f d6 76 ba bc c2 d5 3b ff 39
+2e 4e bd fa 18 b2 b1 86 6b fc 1e 73 5b 75 35 1a
+13 d7 ad 74 66 46 b3 ac fb 7 ab e3 41 77 57 53
+84 98 e8 dd 31 11 a1 d2 16 82 72 f9 6a 40 33 8c
+c4 99 2 cf 81 dc 5e 9c 5a b4 22 c1 5f cc b 56
+30 c7 7c 7a 9a 10 cd 4d 83 65 7e ee ce 71 34 c8
+62 fd 49 f4 9f bf 2a 8f 6d 1c a c9 ef e4 b9 6
+d8 3d 3a bb a8 b5 51 c3 43 52 4b a0 5 a5 93 90
+ae 48 d4 a6 2d 6f a3 63 e1 8a 8d b0 5d b6 23 ea
+60 44 69 92 17 2f f 50 2b f5 f6 32 b7 29 1 45
+12 59 26 d3 c6 87 d9 e5 de 47 5c 6e cb 1d 58 8
+4f eb da 55 89 85 f0 e6 e7 f1 c5 3 f8 d0 38 d1
+fe e0 67 88 9d 25 ca ec 8b 19 21 15 28 f3 97 79
+20 df 91 61 4a 54 1b e9 9e 3e f2 64 2c 96 95 
+i = 2, j = 151
+
+9. 
+a. Feistel cipher: a general cipher design principle.
+Encryption:
+the plaintext is split into left and right halves:
+P = (L0, R0)
+for i from 1 to n, the halves are updated:
+Li = Ri-1
+Ri = Li-1 ^ F(Ri-1, Ki)
+where Ki is the subkey for round i, and F is the round function. The ciphertext is (Ln, Rn)
+Decryption:
+Ri-1 = Li
+Li-1 = Ri ^ F(Ri-1, Ki)
+
+b. DES is a Feistel cipher
+c. AES is not a Feistel cipher because its operations have to be invertible
+d. TEA is not a Feistel cipher because again its operation have to be invertible but it does that by using bt shift, addition and subtraction, which simplicity is as close as of XOR
+
+11. 
+b. Diffusion: In a block, the new left half is the old right half, and the new right half is the old left half xor a round function 
+a. Confusion: The S-boxes expand and squeeze the bits in a half before feeding in a round function, effectively altering it.
+
+12.
+a. 64 bits in a plaintext block
+b. 64 bits in a ciphertext block
+c. key is 56 bits
+d. subkey is 48 bits
+e. 16 round
+f. 8 S-boxes
+g. S-box requires 48 bits of input
+h. S-box generates 32 bits of input
+
+20.
+a. C0 ^ IV = E(P0, K)
+Thus decryption rule is:
+P0 = D(C0 ^ IV, K)
+P1 = D(C1 ^ C0, K)
+P2 = D(C2 ^ C1, K) ...
+b. Weakness of this encryption: Because Cn-1Cn = E(Pn, K), which is a straight mapping from the plaintext, the same plaintext will give the same xor of 2 consecutive ciphertexts. More specfically, given ciphertext C1C2...Cn, tranform it to (VI^C1)(C1^C2)...(Cn-1^Cn) (everything is known up to VI), and a pair of new ciphertext blocks are the same if and only if the pair of plaintexts at those location are the same. This weakness can give rise to similar attack against ECB mode e.g new cipher-text only attack 
+2nd possible disadvantage compared to CBC is this cipher is useless for MAC. The plaintext only depends on ciphertext and key ( = D(Cn^Cn-1,K)) so that there is no chaining of plaintext that will propagate error to the final MAC block. 
+
+21. 
+Since calculation of Pi requires Ci and Ci-1 we need random access to both Ci and Ci-1, or in the case of P0, C0 and VI are needed.
+The disadvantage comes from having to use 2 ciphertexts in a random access environment. If we lose track of ciphertext e.g 2 consecutive ciphertexts were not written sequentially on a disk then their is no way to get the correct pair of ciphertexts for decryption
+ 
+24. code in a separated file
+b. My files were unreadable. failed
+
+25.
+a. If they keep using the same IV then the start of a message can be determined. Also P0^IV = D(C0, K) and thus the same C0's will give the same P0's if this IV is repeated multiple times.
+b. If VI is repeatedly used, the encryption E(IV+i, K) will only depends on i, making the space of variations smaller.
+c. It is more dangerous to have IV unchanged in CTR because as stated, E(IV+i, K) is significantly unvaried compared to E(P^C, K): text has exponential number of variations compared to countable i.
+29. P1 = D(C1, K)^C0
+=>  D(C1, K) = P1^C0 is known
+    Suppose we want to find C (unknown) such that the resulting decryption will return plaintext X (known). Then:
+    D(C1, K)^C = X
+=>  P1^C0^C    = X
+=>  P1^C0^X    = C, and the left hand side is known
+
+30
+As Bob decrypts using C0, X, C2, C3: P0 = D(C0, K2)^IV, !P1 = D(X, K2)^C0, !P2 = D(C2, K2)^X, P3 = D(C3, K2)^C2
+Bob checks MAC (The Ci here are not ciphertexts but immediate texts computed leading to MAC, meaning Bob doesnt know them except for the last Cn-1 i.e MAC): 
+C0 = E(P0^IV, K1), !C1 = E(!P1^C0, K1), !C2 = E(!P2^!C1, K1), !C3 = E(P3^!C2, K1) != MAC 
+where ! means not as supposed to be.
+An aside: IMO, what could go wrong here is !P2^!C1 = P2^C1. Then MAC is unchanged
