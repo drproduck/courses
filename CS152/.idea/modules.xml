@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/CS152.iml" filepath="$PROJECT_DIR$/.idea/CS152.iml" />
-      <module fileurl="file://$PROJECT_DIR$/session/session.iml" filepath="$PROJECT_DIR$/session/session.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS152.iml" filepath="$PROJECT_DIR$/CS152.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StringLab/StringLab.iml" filepath="$PROJECT_DIR$/StringLab/StringLab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/math/math.iml" filepath="$PROJECT_DIR$/math/math.iml" />
     </modules>
   </component>
 </project>
