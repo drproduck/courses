@@ -57,18 +57,33 @@ object worksheet {
     (1+(6*random()).toInt, 1+(6*random()).toInt)
   }
 
-  def main(args: Array[String]): Unit = {
-    println(solve(1, 0, 1))
-    println(solve(1, 2, 1))
-    println(solve(1, -5, 6))
-    println(solve(1, 4, 2))
-    println(isPrime(2))
-    println(isPrime(3))
-    println(isPrime(5))
-    println(isPrime(12))
-    println(phi(12))
-    println(phi(7))
-    println(phi(20))
-    println(rollDice)
-  }
+  println(solve(1, 0, 1))
+  println(solve(1, 2, 1))
+  println(solve(1, -5, 6))
+  println(solve(1, 4, 2))
+
+  println(isPrime(2))
+  println(isPrime(3))
+  println(isPrime(5))
+  println(isPrime(12))
+
+  println(dist((0,3), (4,0)))
+  println(dist((-1, 2000), (3, 4000)))
+  println(dist((500, 345), (0.004, 7)))
+
+  println(dot((1,2,3), (4,5,6)))
+  println(dot((9,8,7), (0.1,0.2,0.4)))
+  println(dot((2,5,8), (3,6,9)))
+
+  println(force(3,4,5))
+  println(force(6,7,8))
+  println(force(0.1,5000,123456))
+
+  println(phi(12))
+  println(phi(7))
+  println(phi(20))
+
+  for(i <- 0 until 10)
+  println(rollDice)
+
 }

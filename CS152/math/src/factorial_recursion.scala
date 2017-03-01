@@ -1,7 +1,7 @@
 /**
   * Created by drproduck on 2/23/17.
   */
-object stupid {
+object factorial_recursion {
   def fact1(n: Int): Int = {
     if (n == 1) {
       1
@@ -10,10 +10,10 @@ object stupid {
 
   def fact2(n: Int): Int = {
     var nn: Int = n
-    var res = 1;
-    while (n > 0) {
-      res *= n
-      nn -= 1;
+    var res: Int = 1
+    while (nn > 0) {
+      res *= nn
+      nn -= 1
     }
     res
   }
@@ -29,10 +29,9 @@ object stupid {
     helper(1, 1)
   }
 
-  def main(args: Array[String]): Unit = {
-    val a : Int = 5
-    println(fact1(a))
-    println(fact2(a))
-    println(fact3(a))
-  }
+  val a : Int = 5
+  println(fact1(a))
+  println(fact2(a))
+  println(fact3(a))
+
 }
