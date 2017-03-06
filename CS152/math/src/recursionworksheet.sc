@@ -2,27 +2,28 @@
   * Created by drproduck on 2/28/17.
   */
 object recursion {
-  def main(args: Array[String]): Unit = {
-    println(addtail(4,3))
-    println(sub(5,3))
-    println(mul(5,3))
-    println(mul(4, 0))
-    println(mul(0,4))
-    println(mul(20,1))
-    println(mul(1,20))
-    println(mul(6,7))
-    println(exp2(5))
-    println(hyperExp(3))
-    println(hyperExptail(3))
-    println(exp2tail(5))
-    println(newton_sqrt(152399025))
-    printCombination(5,3)
-    for (i <- 0 to 10) {
-      println(fib(i))
-      println(fibtail(i))
-    }
-    println(choose(10, 2))
+  println("Welcome to Scala worksheet!")
+
+  println(addtail(4,3))
+  println(sub(5,3))
+  println(mul(5,3))
+  println(mul(4, 0))
+  println(mul(0,4))
+  println(mul(20,1))
+  println(mul(1,20))
+  println(mul(6,7))
+  println(exp2(5))
+  println(hyperExp(3))
+  println(hyperExptail(3))
+  println(exp2tail(5))
+  println(newton_sqrt(152399025))
+  printCombination(5,3)
+  for (i <- 0 to 10) {
+    println(fib(i))
+    println(fibtail(i))
   }
+  println(choose(10, 2))
+
   def add(a:Int, b:Int) : Int = {
     if (b==0) {
       a
@@ -100,8 +101,8 @@ object recursion {
   }
 
   def ackermann (N: Int , m : Int) : Int = {
-      if (m==0) 1
-      else expN(N, ackermann(N, m-1))
+    if (m==0) 1
+    else expN(N, ackermann(N, m-1))
   }
 
   def newton_sqrt(a:Double) : Double = {
@@ -154,7 +155,7 @@ object recursion {
           for (k <- 0 to count){
             ax(k) = a(k)
           }
-            ax(count) = b(j)
+          ax(count) = b(j)
           help(ax, j + 1, count + 1)
         }
       }
