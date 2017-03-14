@@ -1,0 +1,91 @@
+4.
+a. 2^(n/2)
+b. If we assume that after 2^(n/2) hashes we are garanteed to find 1 collision then subsequent hash will produce 1 collision. 2^(n/2) + 9
+c. 2^(n/2) + m - 1
+
+10.
+a. I will give the same answer as b because I'm lazy and not a C user. Though if I have the java version I would bruteforce but keep the searched hashes in a balanced tree for better lookup. worst case should be 12 * 2^12
+b. Because the algorithm automatically pads more 0s to fill the message, we can pick 2 messages shorter than 4 bytes that differ by 1 zero-byte at the end
+My 2 messages are 0x0 and 0x0 0x0. Both their hashes are 0xb72063c286de
+
+14.
+Knowing the key almost does not matter here. In problem 33 of chapter 3, knowing the key and mac, we can compute Pn^Cn-1 because E is a bijective function. On the other hand, hash is one-way, so we can not directly compute the value of M. Moreover, searching for a collision of (M,K) knowing K is almost the same as searching for a collison of (M,K), because K is much shorter than M but in any cases bruteforcing is not the point of this problem
+
+15
+a. one-way and collision resistance
+b. try all values between 10000 and 20000
+c. Yes, usually the monetary amount is small => search space is small
+d. pad more bits around the number
+
+19.
+i>ii: nothing is stored on computer
+ii>i: if he wantst to change the key he only needs to change the encryption
+
+20.
+advantage:time and space efficient, only stores 1 key in database
+disadvantage: easy prey for forward search attack
+
+22.
+Both checksums are: a4c0d35c95a63a805915367dcfe6b751
+diff:
+87 : 07
+71 : f1
+f2 : 72
+c7 : 47
+cc : 4c
+d8 : 58
+
+23.
+a. 
+Tom Austin and Ying Zhang are authorized access to all of my account information and may make withdrawals or deposits.
+
+Sincerely,
+Mark Stamp
+
+To Whom it May Concern:
+
+Tom Austin and Ying Zhang have demonstrated decent programming
+ability.  They should do OK in any programming position, provided that 
+the work is not too complex, and that the position does not require
+any independent thought or initiative.
+
+However, I think they like to steal office supplies, so I would keep
+a close eye on them.  Also, their basic hygiene is somewhat lacking 
+so I would recommend that you have them telecommute.
+
+
+Sincerely,
+
+Mark Stamp 
+
+b. both checksums are c321325acff48137d62844e481ab01c5. This is a security problem because the messages are opposite in meaning. An attacker can change the original indent of the message to his benefit and send it with the same checksum. Noone can verify that the message tampered because they have the same checksum
+
+c. Both my checksums are now 1d7bb9364eeb6123bf1ac7245b157eb7 (files are included)
+
+d. We use the conditional statement provided in the book so that the meaningless portion of the ps file is actually what affects the sum, while both real messages are stored on the same file, leaving everything the same except for that portion
+
+24.
+a. first unsign the CA's message by using their public key. Now hash the message M which should be sent along. compare the hashed h(M) with the unsigned message
+b. To check if the message has been tampered with by an attacker
+c. Because only Alice has the private key and the CA vouched for that
+d. You dont know about the identity of the sender except that he/she has the private key corresponding to his public key
+
+31.
+a. Alice !
+b. Images provided (It was a hotdog)
+
+34.
+a. Using distance between words (space) as watermark, where words are not normally spaced
+deleting random letters here and there
+make up words that are not real.
+use dots in content page 
+
+b.obtain 2 or more copies and compare them to find the difference
+
+c. make a completely new typewritten copy of the manuscript, or obscure the watermark, for example tear out pages that have anomalies, pour ink on them ...
+
+d.easiest way is to type up a new copy that you are sure will conform to standard writing such as space, dots, size of word, underline, paragraph spacing ...
+ 
+37. All necessary files are provided. bmps are provided instead of screenshots. Inside the image is a kafka's book
+
+
