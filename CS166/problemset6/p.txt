@@ -1,0 +1,64 @@
+1.
+a. gdnrogsm, gedonoreotgema
+b. aywysya, euyuoue
+
+4. 
+a. One-way: evn if the attacker has access to the file, he still doesnt know the password. 
+b. Encrypting the password will also require storing the key somewhere. If the attacker can steal the pwd file he could as well steal the key
+c. salt: non-secre value that causes identical pwd to hash to different value. Should always be used to prevent same plaintext same ciphertext attack
+
+7. 
+a. credit cards are more valuable than IDs. The checkers will put more effort on identifying the holders 
+b. The intruder will not know that an identity image was kept and thus not prepare his appearance to fit the image
+
+9.
+a. i - 32^7, i - 2*32^7
+b. 10 character passwords are padded with null to the end
+
+20. By 19 it is 2^(n-1)*(1+2(1-p)/p) because M is large
+				~ 2^(n-1)*(2/p) because p is small
+				~ 2^n / p
+
+21. 
+a. 156, 11 millions for MD5
+b. 4000 * 11000000 / 156 = 282051282 passwords in 5 days
+c. 
+d.
+
+22.
+a. 10^5 / 10^10 * 10^7 = 10^2
+b. 1 / 10^10
+
+25. 
+a. fraud rate: rate at which system mistakenly authenticate a person with another 
+b. insult rate : rate at which system fails to authenticate a valid user
+c. equal error rate: rate for which the fraud and insult rates are the same. Useful for comparing different biometrics system
+
+27.
+a. Cheaters can wear sunglasses, hats, obscure their faces ..
+b. requires goers to take off any facial accessories when entering
+c. bring a Tom Cruise human mask. Wear wigs, fake moustache ..
+
+28. 
+a.1st: a latex copy glued to real thumb: works after applying some heat and humid
+  2nd: ballistics-gel print: works
+  3rd: licked paper copy: works,the easiest of all
+b. 1st: measure elasticity
+   2nd: detect body temperature and humid
+   3rd: detect movement
+
+32.
+a. d(Alice, Bob) = 15/16, d(Alice, Charlie) = 1, d(Bob, Charlie) = 1
+b. d(Alice, W) = 7 => Alice ~ W
+   d(Bob, X) = 6 => Bob ~ X
+   d(Charlie, U) = 5 => Charlie ~ U
+   V and Y are close to none
+
+33. 
+a. in file
+b. if we remove T, The intruder needs only to succeed at 1 transmission to obtain the hash and use it for subsequent transmissions
+c. T is available, more efficient to compute than a random challenge. On the other hand, it can be traced by the attacker if he has access to the serverd. using R is more secure, security is clearly a better trade of than time efficiency
+
+
+
+
