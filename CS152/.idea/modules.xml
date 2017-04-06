@@ -5,9 +5,12 @@
       <module fileurl="file://$PROJECT_DIR$/CS152.iml" filepath="$PROJECT_DIR$/CS152.iml" />
       <module fileurl="file://$PROJECT_DIR$/Console/Console.iml" filepath="$PROJECT_DIR$/Console/Console.iml" />
       <module fileurl="file://$PROJECT_DIR$/StringLab/StringLab.iml" filepath="$PROJECT_DIR$/StringLab/StringLab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/acorn/acorn.iml" filepath="$PROJECT_DIR$/acorn/acorn.iml" />
       <module fileurl="file://$PROJECT_DIR$/amoeba/amoeba.iml" filepath="$PROJECT_DIR$/amoeba/amoeba.iml" />
       <module fileurl="file://$PROJECT_DIR$/functional/functional.iml" filepath="$PROJECT_DIR$/functional/functional.iml" />
       <module fileurl="file://$PROJECT_DIR$/math/math.iml" filepath="$PROJECT_DIR$/math/math.iml" />
+      <module fileurl="file://$PROJECT_DIR$/midterm/midterm.iml" filepath="$PROJECT_DIR$/midterm/midterm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/review/review.iml" filepath="$PROJECT_DIR$/review/review.iml" />
     </modules>
   </component>
 </project>

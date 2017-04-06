@@ -47,7 +47,7 @@ object processor {
             case "equal" => env(ir(1)).content = if (get(ir(2)) == get(ir(3))) 1 else 0
             case "not" => env(ir(1)).content = if (get(ir(2)) == 0) 1 else 0
             case "goto" => cip = labels(ir(1))
-            case "if" => if (env(ir(1)).content == 1) cip = labels(ir(2))
+            case "if" => if (env(ir(1)).content != 0) cip = labels(ir(2))
             case "halt" => halt = true
             case "printmsg" => println(program(cip).substring(9, program(cip).length))
             case "read" => env.put(ir(1), new Variable(readLine().toInt))
